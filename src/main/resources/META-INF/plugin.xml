@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>pr0p1k.gitHubPlugin</id>
+    <name>GitHubFeatures</name>
+    <vendor email="propiktunes@gmail.com" url="vk.com/p3stilence">Pr0p1k</vendor>
+
+    <description>Plugin for miscellaneous gitHub needs and just for fun</description>
+
+    <!--<depends>com.intellij.modules.lang</depends>-->
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <group id="pr0p1k.github" text="GitHub" description="Actions for github">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="pr0p1k.github.openRepo" class="OpenRepoAction" text="Open repository"
+                    description="Opens this project's github page"/>
+        </group>
+    </actions>
+</idea-plugin>
